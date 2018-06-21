@@ -10,7 +10,7 @@ Base repository when building rails applications using passenger-docker.
 $ docker build -t rails-image .
 ```
 
-## Run
+### Run
 
 ```
 $ docker run \

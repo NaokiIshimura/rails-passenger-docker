@@ -46,6 +46,9 @@ RUN gem install bundler
 RUN apt-get update && apt-get install -y \
   tzdata
 
+# タイムゾーンをJSTに設定
+ENV TZ=Asia/Tokyo
+
 # bundle install
 WORKDIR /home/app/webapp
 RUN bundle install
